@@ -31,7 +31,14 @@
 	echo "<br>test<br>";
 
 	//strlen
-	$greeting = "Hello, World!";
+	$greeting = 'Hello, World!';
 	echo strlen($greeting);
+
+	//ascii of first character
+	$firstChar = $greeting[0];
+	echo '<br>';
+	echo ord($firstChar);
+
+
 
 ?>
