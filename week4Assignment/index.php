@@ -1,6 +1,6 @@
 <?php
 	$date =  date('Y-m-d', time());
-	$dateNew = str_replace("-", '/', $date) //'-' in $date replaced with '/'
+	$dateNew = str_replace("-", '/', $date); //'-' in $date replaced with '/'
 	echo "The value of \$date: ".$date."<br>";
 	$tar = "2017/05/24";
 	echo "The value of \$tar: ".$tar."<br>";
