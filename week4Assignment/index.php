@@ -22,6 +22,11 @@
 			echo "$charIndex". ' ';
 		}
 	}
+	
+	//number of words
+	$dateArray = (explode("/", $dateNew));
+	$numWords = sizeof($dateArray);
+	echo '<br>'."$numWords".' words';
 
 	echo "<br>test<br>";
 ?>
