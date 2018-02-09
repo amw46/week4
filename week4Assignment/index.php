@@ -9,11 +9,18 @@
 	print_r($year);
 
 	if (strcmp($dateNew, $tar) < 0) { //if $dateNew is less than $tar, result is -1
-		echo "<br>The past<br>";
+		echo '<br>The past<br>';
 	} elseif (strcmp($dateNew, $tar) > 0) { //if dateNew is greater than tar, result is 1
-		echo "<br>The future<br>";
+		echo '<br>The future<br>';
 	} else {
-		echo "<br>Oops.<br>";
+		echo '<br>Oops.<br>';
+	}
+
+	//slash position
+	for ($charIndex = 0; $charIndex < strlen($dateNew); $charIndex++) {
+		if ($dateNew[$charIndex] == "/") { //if index contains a value of "/"
+			echo "$charIndex". ' ';
+		}
 	}
 
 	echo "<br>test<br>";
