@@ -8,14 +8,13 @@
 	echo "The value of \$year: ";
 	print_r($year);
 
-	if(strcmp($dateNew, $tar) < 0) { //if $dateNew is less than $tar, result is -1
-		echo "The past";
-	else if (strcmp($dateNew, $tar) > 0) { //if dateNew is greater than tar, result is 1
-		echo "The future";
-	}
-	else {
-		echo "Oops."
+	if (strcmp($dateNew, $tar) < 0) { //if $dateNew is less than $tar, result is -1
+		echo "<br>The past<br>";
+	} elseif (strcmp($dateNew, $tar) > 0) { //if dateNew is greater than tar, result is 1
+		echo "<br>The future<br>";
+	} else {
+		echo "<br>Oops.<br>";
 	}
 
-	echo "test";
+	echo "<br>test<br>";
 ?>
