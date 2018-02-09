@@ -28,7 +28,6 @@
 	$numWords = sizeof($dateArray);
 	echo '<br>'."$numWords".' words<br>';
 
-	echo "<br>test<br>";
 
 	//strlen
 	$greeting = 'Hello, World!';
@@ -41,10 +40,14 @@
 
 	//last two characters
 	$lastTwo = substr($dateNew, -2); //from index -2 to the end
-	echo $lastTwo . ',br>';
+	echo $lastTwo . '<br>';
 
-
-
+	//date array
+	//array created and delimited in earlier exercise
+	foreach($dateArray as $value) {
+		echo $value.' ';
+	}
+	echo '<br>';
 
 
 ?>
