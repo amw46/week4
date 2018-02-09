@@ -26,7 +26,12 @@
 	//number of words
 	$dateArray = (explode("/", $dateNew));
 	$numWords = sizeof($dateArray);
-	echo '<br>'."$numWords".' words';
+	echo '<br>'."$numWords".' words<br>';
 
 	echo "<br>test<br>";
+
+	//strlen
+	$greeting = "Hello, World!";
+	echo strlen($greeting);
+
 ?>
