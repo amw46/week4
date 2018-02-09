@@ -37,7 +37,13 @@
 	//ascii of first character
 	$firstChar = $greeting[0];
 	echo '<br>';
-	echo ord($firstChar);
+	echo ord($firstChar). '<br>';
+
+	//last two characters
+	$lastTwo = substr($dateNew, -2); //from index -2 to the end
+	echo $lastTwo . ',br>';
+
+
 
 
 
