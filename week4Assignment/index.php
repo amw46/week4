@@ -50,4 +50,32 @@
 	echo '<br>';
 
 
+	//leap year identification
+	$leap;
+	foreach($year as $yearVal) {
+		if ($yearVal % 4 == 0) {
+			if ($yearVal % 100 == 0) {
+				if ($yearVal % 400 == 0) {
+					$leap = True;
+				} else {
+					$leap = False;
+				}
+			} else {
+				$leap = False;
+			}
+			
+		}
+
+		switch ($leap) {
+			case True:
+				echo "$yearVal is a leap year" . '<br>';
+				break;
+			case False:
+				echo "$yearVal is not a leap year" . '<br>';
+				break;
+		}
+	} //end foreach
+
+
+
 ?>
