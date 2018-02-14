@@ -76,6 +76,6 @@
 		}
 	} //end foreach
 
-
+	echo '<br><span style="color:red;">Greetings from exam 1!</span><br>';
 
 ?>
